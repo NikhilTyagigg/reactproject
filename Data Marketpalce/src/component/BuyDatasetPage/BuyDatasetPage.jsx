@@ -56,11 +56,12 @@ const BuyDatasetPage = () => {
           <h3>Payment Gateway</h3>
           <p>Amount: ${selectedDataset?.price}</p>
           <button onClick={handleAccuracyCheck}>Check Accuracy</button>
+          <button onClick={() => handlePaymentAction('pay')}>Pay</button>
           <button onClick={closePaymentModal}>Close</button>
         </div>
       )}
     </div>
   );
-};
+}
 
 export default BuyDatasetPage;
